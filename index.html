@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Abdul Ghani</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            src: url('Assets/poppins-font/PoppinsRegular-B2Bw.otf')
+                format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-family: 'Poppins', sans-serif;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .cv {
+            width: 100%;
+            min-height: 100vh;
+            background: white;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr 150px;
+            align-items: start;
+
+            background:
+                linear-gradient(
+                    rgba(10, 25, 45, 0.55),
+                    rgba(10, 25, 45, 0.55)
+                ),
+                url("BG.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            color: white;
+            padding-top: 45px; 
+            padding-inline: 10%;
+            padding-bottom: 75px;
+        }
+
+        .judul h1 {
+            margin: 0;
+            padding-top: 50px;
+            font-size: 70px;
+        }
+
+        .judul p {
+            margin: 8px 0 0;
+            color: #d7e5f4;
+            font-size: 20px;
+        }
+
+        .foto {
+            width: 250px;
+            height: 280px;
+            background: #eee;
+            border: 3px solid white;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .foto img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .konten {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            width: 100%;
+            padding-top: 5%;
+            padding-inline: 10%;
+            padding-bottom: 5%;
+        }
+
+        main {
+            min-width: 0;
+        }
+
+        aside {
+            min-width: 0;
+        }
+
+        .bagian {
+            margin-bottom: 30px;
+        }
+
+        .bagian h2 {
+            font-size: 35px;
+            color: #173b63;
+            border-bottom: 2px solid #dce6f0;
+            padding-bottom: 8px;
+            margin: 0 0 15px;
+        }
+
+        .bagian h3 {
+            font-size: 25px;
+            margin: 18px 0 5px;
+        }
+
+        .bagian p,
+        .bagian li {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        .bagian p {
+            margin-top: 5px;
+        }
+
+        .bagian ul {
+            padding-left: 20px;
+        }
+
+        .info p {
+            margin: 10px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .info strong {
+            display: inline-block;
+            width: 180px;
+            vertical-align: top;
+        }
+
+        a {
+            color: #245e96;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                grid-template-columns: minmax(0, 1fr) 110px;
+                gap: 15px;
+                padding: 25px 5%;
+            }
+
+            .judul h1 {
+                font-size: 23px;
+                overflow-wrap: anywhere;
+            }
+
+            .judul p {
+                font-size: 13px;
+            }
+
+            .foto {
+                width: 110px;
+                height: 140px;
+            }
+
+            .konten {
+                grid-template-columns: 1fr;
+                gap: 0;
+                padding: 25px 5%;
+            }
+
+            .info strong {
+                display: block;
+                width: auto;
+            }
+
+            .info p {
+                margin-bottom: 15px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            header {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .konten {
+                grid-template-columns: 2fr 1fr;
+            }
+
+            .bagian {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <header>
+            <div class="judul">
+                <h1>Muhammad Abdul Ghani</h1>
+                <p>Universitas Muhammadiyah Ponorogo</p>
+            </div>
+
+            <div class="foto">
+                <img src="Fotoku.jpeg" alt="Foto profil">
+            </div>
+        </header>
+
+        <div class="konten">
+
+            <main>
+                <section class="bagian">
+                    <h2>Keterangan</h2>
+
+                    <div class="info">
+                        <p><strong>Nama</strong>: Muhammad Abdul Ghani</p>
+                        <p><strong>Tempat, tanggal lahir</strong>: Kota M****, ***** 2006</p>
+                        <p><strong>Alamat</strong>: Jawa Timur, Indonesia</p>
+                        <p><strong>Pendidikan</strong>: Teknik Informatika</p>
+                        <p><strong>Universitas</strong>: Universitas M***** P*****</p>
+                        <p><strong>Email</strong>: A******6@gmail.com</p>
+                    </div>
+                </section>
+
+                <section class="bagian">
+                    <h2>Pengalaman</h2>
+
+                    <h3>Proyek Website</h3>
+                    <p>
+                        Membuat website jasa editing video menggunakan
+                        HTML dan CSS dengan tampilan sederhana,
+                        responsif, dan mudah digunakan.
+                    </p>
+
+                    <h3>Proyek Pemrograman</h3>
+                    <p>
+                        Mengerjakan latihan pemrograman menggunakan
+                        Python atau C++ untuk melatih logika,
+                        algoritma, dan kemampuan menyelesaikan masalah.
+                    </p>
+                </section>
+
+                <section class="bagian">
+                    <h2>Keahlian</h2>
+
+                    <ul>
+                        <li>HTML dan CSS</li>
+                        <li>Dasar JavaScript</li>
+                        <li>Dasar Python dan C++</li>
+                        <li>Linux dan GitHub</li>
+                    </ul>
+                </section>
+
+            </main>
+
+            <aside>
+                <section class="bagian">
+                    <h2>Kontak</h2>
+                    <p>Telepon: 08xxxxxxxxxx</p>
+                    <p>
+                        GitHub:
+                        <a href="https://github.com/username">
+                            github.com/username
+                        </a>
+                    </p>
+                </section>
+
+                <section class="bagian">
+                    <h2>Minat</h2>
+                    <p>Pemrograman</p>
+                    <p>Web Development</p>
+                    <p>Teknologi Informasi</p>
+                    <p>Multimedia</p>
+                </section>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
